@@ -63,7 +63,8 @@ module.exports = {
         '!.git/**',]
     }),
     ...entries.map(entry => new HtmlWebpackPlugin({
-      title: 'Esri Developer Summit 2021 Plenary Demo',
+      title: '3D Limmern Hydro Power Plant',
+      description: 'Esri Developer Summit 2021 Plenary Demo for the ArcGIS API for JavaScript',
       template: `./src/layout.js`,
       filename: `${entry}.html`,
       entry,

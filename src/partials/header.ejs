@@ -7,9 +7,8 @@
         packages: [
           {
             name: "app",
-            location: "/",
+            location: document.location.pathname.replace(/\/[^/]+$/, ""),
             main: "<%= htmlWebpackPlugin.files.js[0].replace(/\.[^/.]+$/, '') %>"
-            // main: ""
           }
         ]
       };
@@ -23,5 +22,20 @@
 
     <meta charset="utf-8" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <meta name="description" content="Limmern Hydro Power Plant: Esri Developer Summit 2021 Plenary Demo" />
+
+    <meta name="twitter:title" content="Esri Developer Summit Demo" />
+    <meta name="twitter:description" content="Limmern Hydro Power Plant: Esri Developer Summit 2021 Plenary Demo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@arnofiva">
+    <meta name="twitter:creator" content="@arnofiva">
+    <meta name="twitter:image" content="./thumbnail.png" />
+
+    <meta property="og:title" content="Explore Mars" />
+    <meta property="og:description"  content="Limmern Hydro Power Plant: Esri Developer Summit 2021 Plenary Demo" />
+    <meta property="og:image" content="./thumbnail.png" />
+    <meta property="og:url" content="https://arnofiva.github.io/2021-dev-summit-plenary-demos/" />
+    <meta property="og:type" content="website" />
   </head>
   <body>

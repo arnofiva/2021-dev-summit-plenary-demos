@@ -57,9 +57,13 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: [
+        '**/*',
+        '!.git/**',]
+    }),
     ...entries.map(entry => new HtmlWebpackPlugin({
-      title: 'Esri Dev Summit 2021 Plenary Demo',
+      title: 'Esri Developer Summit 2021 Plenary Demo',
       template: `./src/layout.js`,
       filename: `${entry}.html`,
       entry,

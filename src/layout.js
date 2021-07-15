@@ -1,6 +1,4 @@
 
-let count = 0;
-
 module.exports = templateData => {
   const { htmlWebpackPlugin } = templateData;
   const { entry } = htmlWebpackPlugin.options;

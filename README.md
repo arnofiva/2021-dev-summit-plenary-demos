@@ -1,4 +1,4 @@
-# Esri Dev Summit 2021 Plenary Demo
+# Esri Developer Summit 2021 Plenary Demo
 
 This repository contains the plenary demo for the 3D ArcGIS API for JavaScript.
 

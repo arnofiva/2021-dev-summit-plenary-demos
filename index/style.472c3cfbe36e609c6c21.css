@@ -1,0 +1,54 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#containerElevationProfile {
+  position: absolute;
+  width: 30vw;
+  right: 10px;
+  bottom: 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#containerCodeSnippet {
+  display: none;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1em;
+}
+
+pre {
+  margin: 0;
+}
+
+.esri-view-surface::after {
+  outline: none !important;
+}
+
+.icon-snippet:before {
+  content: "</>"
+}
+
+#code-snippet {
+  font-size: 1.1em;
+  position: absolute;
+  z-index: 999;
+  left: -1;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  width: 550px;
+  margin-left: -550px;
+}
+
+.esri-ui-bottom-left > .esri-button {
+  width: auto !important;
+}
+
+.hide {
+  display: none;
+}

@@ -7,9 +7,8 @@
         packages: [
           {
             name: "app",
-            location: "/",
+            location: document.location.pathname.replace(/\/[^/]+$/, ""),
             main: "index/main.472c3cfbe36e609c6c21"
-            // main: ""
           }
         ]
       };
@@ -22,7 +21,22 @@
     
 
     <meta charset="utf-8" />
-    <title>Esri Dev Summit 2021 Plenary Demo</title>
+    <title>Esri Developer Summit 2021 Plenary Demo</title>
+
+    <meta name="description" content="Limmern Hydro Power Plant: Esri Developer Summit 2021 Plenary Demo" />
+
+    <meta name="twitter:title" content="Esri Developer Summit Demo" />
+    <meta name="twitter:description" content="Limmern Hydro Power Plant: Esri Developer Summit 2021 Plenary Demo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@arnofiva">
+    <meta name="twitter:creator" content="@arnofiva">
+    <meta name="twitter:image" content="./thumbnail.png" />
+
+    <meta property="og:title" content="Explore Mars" />
+    <meta property="og:description"  content="Limmern Hydro Power Plant: Esri Developer Summit 2021 Plenary Demo" />
+    <meta property="og:image" content="./thumbnail.png" />
+    <meta property="og:url" content="https://arnofiva.github.io/2021-dev-summit-plenary-demos/" />
+    <meta property="og:type" content="website" />
   </head>
   <body>
 <div id="viewDiv">
@@ -30,81 +44,10 @@
 
 </div>
 
-    <!-- {
-  "tags": {
-    "headTags": [
-      {
-        "tagName": "script",
-        "voidTag": false,
-        "meta": {
-          "plugin": "html-webpack-plugin"
-        },
-        "attributes": {
-          "defer": true,
-          "src": "index/main.472c3cfbe36e609c6c21.js"
-        }
-      },
-      {
-        "tagName": "link",
-        "voidTag": true,
-        "meta": {
-          "plugin": "html-webpack-plugin"
-        },
-        "attributes": {
-          "href": "index/style.472c3cfbe36e609c6c21.css",
-          "rel": "stylesheet"
-        }
-      }
-    ],
-    "bodyTags": []
-  },
-  "files": {
-    "publicPath": "",
-    "js": [
-      "index/main.472c3cfbe36e609c6c21.js"
-    ],
-    "css": [
-      "index/style.472c3cfbe36e609c6c21.css"
-    ]
-  },
-  "options": {
-    "template": "/Users/fivaa/src/jsapi.dev/ds2021-limmern/node_modules/html-webpack-plugin/lib/loader.js!/Users/fivaa/src/jsapi.dev/ds2021-limmern/src/layout.js",
-    "templateContent": false,
-    "filename": "index.html",
-    "publicPath": "auto",
-    "hash": false,
-    "inject": false,
-    "scriptLoading": "defer",
-    "compile": true,
-    "favicon": false,
-    "minify": "auto",
-    "cache": true,
-    "showErrors": true,
-    "chunks": [
-      "index"
-    ],
-    "excludeChunks": [],
-    "chunksSortMode": "none",
-    "meta": {},
-    "base": false,
-    "title": "Esri Dev Summit 2021 Plenary Demo",
-    "xhtml": false,
-    "entry": "index"
-  }
-} -->
-
     <script src="https://js.arcgis.com/4.20/"></script>
 
     <script>
       require(["app"], function() {});
-
-      // require({
-      //     packages: [{
-      //       name: "app",
-      //       location: document.location.pathname.replace(/\/[^/]+$/, "")
-      //     }]
-      //   }, ["app/index"], function() {
-      // });
     </script>
   </body>
 </html>

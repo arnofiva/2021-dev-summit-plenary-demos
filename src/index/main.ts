@@ -63,7 +63,6 @@ const view = new SceneView({
 
 const elevationProfile = new ElevationProfile({
   view: view,
-  unit: "imperial",
   container: epContainer,
   visibleElements: {
     sketchButton: false,
